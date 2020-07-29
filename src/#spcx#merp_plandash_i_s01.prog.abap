@@ -631,7 +631,7 @@ FORM prepare_fieldcat .
       CONDENSE c_fieldname.
       CONCATENATE 'DAY' c_fieldname INTO c_fieldname.
 
-      CONCATENATE date_index+4(2) date_index+6(2) date_index+0(4)
+      CONCATENATE date_index+4(2) date_index+6(2) "date_index+0(4)
       INTO gt_fldcat-scrtext_l SEPARATED BY '/'.
 
       gt_fldcat-seltext = date_index.
@@ -639,7 +639,7 @@ FORM prepare_fieldcat .
       gt_fldcat-tabname = 'GT_MATFO'.
       gt_fldcat-no_zero = 'X'.
       gt_fldcat-decimals_o = 2.
-      gt_fldcat-outputlen = '7'.
+      gt_fldcat-outputlen = '5'.
       gt_fldcat-just = 'R'.
       APPEND gt_fldcat.
 
